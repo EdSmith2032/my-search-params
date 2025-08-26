@@ -13,44 +13,65 @@
 
 <body>
 
-    <form action="https://www.youtube.com/results" method="GET">
-        <label for="search">Search YouTube:</label>
-        <input type="text" name="search_query" id="search">
-        <button type="submit">Search</button>
-    </form>
+<div class="container mt-5">
 
-    <br>
+        <div class="card p-4 mb-4">
+            <h1 class="h3 mb-3">Youtube</h1>
+            <form action="https://www.youtube.com/results" method="GET">
+                <div class="mb-3">
+                    <label for="search" class="form-label">Search YouTube:</label>
+                    <input type="text" name="search_query" id="search" class="form-control" placeholder="e.g., funny cat videos">
+                </div>
+                <button type="submit" class="btn btn-danger">Search</button>
+            </form>
+        </div>
 
-    <form action="https://www.google.com/search">
-        <label for="gsearch">Search Google:</label>
-        <input type="text" name="q" id="gsearch">
-        <button type="submit">Search</button>
-    </form>
+        <div class="card p-4 mb-4">
+            <h1 class="h3 mb-3">Google</h1>
+            <form action="https://www.google.com/search">
+                <div class="mb-3">
+                    <label for="gsearch" class="form-label">Search Google:</label>
+                    <input type="text" name="q" id="gsearch" class="form-control" placeholder="e.g., Bootstrap 5">
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
 
-    <br>
+        <div class="card p-4 mb-4">
+            <h1 class="h3 mb-3">WikiHow</h1>
+            <form action="https://www.wikihow.com/wikiHowTo">
+                <div class="mb-3">
+                    <label for="wikihow" class="form-label">Search WikiHow:</label>
+                    <input type="text" name="search" id="wikihow" class="form-control" placeholder="e.g., how to tie a tie">
+                </div>
+                <button type="submit" class="btn btn-info text-white">Search</button>
+            </form>
+        </div>
 
-    <form action="https://www.wikihow.com/wikiHowTo">
-        <label for="wikihow">Search WikiHow:</label>
-        <input type="text" name="search" id="wikihow">
-        <button type="submit">Search</button>
-    </form>
+        <div class="card p-4">
+            <h1 class="h3 mb-3">Pexels Image Editor</h1>
+            <form action="https://images.pexels.com/photos/3184402/pexels-photo-3184402.jpeg" method="GET">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="w" class="form-label">Width:</label>
+                        <input type="number" name="w" id="w" value="600" class="form-control">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="h" class="form-label">Height:</label>
+                        <input type="number" name="h" id="h" value="400" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="sepia" class="form-label">Sepia (0–100):</label>
+                    <input type="number" name="sepia" id="sepia" value="80" class="form-control" min="0" max="100">
+                </div>
+                <button type="submit" class="btn btn-success">View Image</button>
+            </form>
+        </div>
 
-    <br>
+    </div>
 
-    <form action="https://images.pexels.com/photos/3184402/pexels-photo-3184402.jpeg" method="GET">
-        <label for="w">Width:</label>
-        <input type="number" name="w" id="w" value="600">
-
-        <label for="h">Height:</label>
-        <input type="number" name="h" id="h" value="400">
-
-        <label for="sepia">Sepia (0–100):</label>
-        <input type="text" name="sepia" id="sepia" value="80">
-
-        <button type="submit">View Image</button>
-    </form>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
